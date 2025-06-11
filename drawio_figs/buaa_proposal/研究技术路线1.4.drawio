@@ -1,237 +1,135 @@
-<mxfile host="app.diagrams.net" modified="2025-06-11T11:05:44.000Z" agent="5.0" etag="xxx" version="21.0.0" type="device">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0" version="27.1.4">
   <diagram name="Page-1" id="xxx">
-    <mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="800" math="0" shadow="0">
+    <mxGraphModel dx="620" dy="516" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="800" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        
-        <!-- 整体目标标注 -->
-        <mxCell id="2" value="Global Goal: Minimize Total Cost and Maximize Utilization while meeting all SLOs" style="text;html=1;strokeColor=#d6b656;fillColor=#fff2cc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=16;fontStyle=1;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="300" y="20" width="600" height="40" as="geometry" />
-        </mxCell>
-        
-        <!-- 任务队列区标题 -->
-        <mxCell id="3" value="Inputs" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="50" y="80" width="100" height="30" as="geometry" />
-        </mxCell>
-        
-        <!-- LLM任务 -->
-        <mxCell id="4" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=3;" vertex="1" parent="1">
+        <mxCell id="4" value="&lt;span style=&quot;font-size: 11px; text-align: left;&quot;&gt;Request: LLM Inference&lt;/span&gt;&lt;br style=&quot;font-size: 11px; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; text-align: left;&quot;&gt;SLO: Latency &amp;lt; 100ms&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=3;" parent="1" vertex="1">
           <mxGeometry x="20" y="120" width="160" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="5" value="CROWN" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;fontColor=#FFD700;" vertex="1" parent="1">
-          <mxGeometry x="30" y="130" width="50" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="6" value="LLM" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="85" y="130" width="40" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="7" value="Request: LLM Inference&#xa;SLO: Latency &lt; 100ms" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="30" y="160" width="140" height="30" as="geometry" />
-        </mxCell>
-        
-        <!-- DL训练任务 -->
-        <mxCell id="8" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=3;" vertex="1" parent="1">
+        <mxCell id="8" value="&lt;span style=&quot;font-size: 11px; text-align: left;&quot;&gt;DL Training&lt;/span&gt;&lt;br style=&quot;font-size: 11px; text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; text-align: left;&quot;&gt;Goal: Max Throughput&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=3;" parent="1" vertex="1">
           <mxGeometry x="20" y="220" width="160" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="9" value="CYCLE" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#FFA500;" vertex="1" parent="1">
-          <mxGeometry x="30" y="230" width="50" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="10" value="Request: DL Training&#xa;Goal: Max Throughput" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="85" y="245" width="90" height="30" as="geometry" />
-        </mxCell>
-        
-        <!-- CNN推理任务 -->
-        <mxCell id="11" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=3;" vertex="1" parent="1">
+        <mxCell id="11" value="&lt;span style=&quot;font-size: 11px; text-align: left;&quot;&gt;DL Inference&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=3;" parent="1" vertex="1">
           <mxGeometry x="20" y="320" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="12" value="BRAIN" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#32CD32;" vertex="1" parent="1">
-          <mxGeometry x="30" y="330" width="40" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="13" value="Request: CNN Inference" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="80" y="340" width="90" height="20" as="geometry" />
-        </mxCell>
-        
-        <!-- 调度决策核心区标题 -->
-        <mxCell id="14" value="The Brain" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="350" y="80" width="100" height="30" as="geometry" />
-        </mxCell>
-        
-        <!-- 异构协同调度器主框 -->
-        <mxCell id="15" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=3;" vertex="1" parent="1">
+        <mxCell id="15" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=3;" parent="1" vertex="1">
           <mxGeometry x="250" y="120" width="300" height="260" as="geometry" />
         </mxCell>
-        <mxCell id="16" value="异构协同调度器&#xa;(Hybrid AI Co-Scheduler)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+        <mxCell id="16" value="Hybrid Co-Scheduler" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;" parent="1" vertex="1">
           <mxGeometry x="320" y="130" width="160" height="40" as="geometry" />
         </mxCell>
-        
-        <!-- 统一性能预测器 -->
-        <mxCell id="17" value="统一性能预测器&#xa;(Unified Performance Predictor)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+        <mxCell id="17" value="Performance Predictor" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=12;fontStyle=1;" parent="1" vertex="1">
           <mxGeometry x="270" y="190" width="120" height="60" as="geometry" />
         </mxCell>
-        
-        <!-- 成本/SLO优化引擎 -->
-        <mxCell id="18" value="成本/SLO优化引擎&#xa;(Cost and SLO Optimization Engine)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+        <mxCell id="18" value="Cost and SLO Optimization Engine" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;fontSize=12;fontStyle=1;" parent="1" vertex="1">
           <mxGeometry x="410" y="190" width="120" height="60" as="geometry" />
         </mxCell>
-        
-        <!-- 预测器到优化引擎的箭头 -->
-        <mxCell id="19" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="17" target="18">
+        <mxCell id="19" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;" parent="1" source="17" target="18" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="400" y="300" as="sourcePoint" />
             <mxPoint x="450" y="250" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        
-        <!-- 任务到预测器的箭头 -->
-        <mxCell id="20" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.2;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#9673a6;" edge="1" parent="1" source="4" target="17">
+        <mxCell id="20" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=2;strokeColor=#9673a6;" parent="1" source="4" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="400" y="300" as="sourcePoint" />
-            <mxPoint x="450" y="250" as="targetPoint" />
+            <mxPoint x="250" y="202" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="21" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#d6b656;" edge="1" parent="1" source="8" target="17">
+        <mxCell id="21" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=2;strokeColor=#d6b656;" parent="1" source="8" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="400" y="300" as="sourcePoint" />
-            <mxPoint x="450" y="250" as="targetPoint" />
+            <mxPoint x="240" y="240" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="22" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.8;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#82b366;" edge="1" parent="1" source="11" target="17">
+        <mxCell id="22" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=2;strokeColor=#82b366;" parent="1" source="11" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="400" y="300" as="sourcePoint" />
-            <mxPoint x="450" y="250" as="targetPoint" />
+            <mxPoint x="250" y="270" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        
-        <!-- 资源池区标题 -->
-        <mxCell id="23" value="The Playground" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="750" y="80" width="150" height="30" as="geometry" />
+        <mxCell id="24" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="600" y="130" width="260" height="110" as="geometry" />
         </mxCell>
-        
-        <!-- LLM调度结果区域 -->
-        <mxCell id="24" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="600" y="120" width="350" height="140" as="geometry" />
+        <mxCell id="25" value="L1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="620" y="140" width="30" height="30" as="geometry" />
         </mxCell>
-        
-        <!-- LLM模型分割 -->
-        <mxCell id="25" value="L1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="620" y="150" width="30" height="30" as="geometry" />
+        <mxCell id="26" value="L2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="710" y="140" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="26" value="L2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="710" y="150" width="30" height="30" as="geometry" />
+        <mxCell id="27" value="L3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="800" y="140" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="27" value="L3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="800" y="150" width="30" height="30" as="geometry" />
-        </mxCell>
-        
-        <!-- 流水线箭头 -->
-        <mxCell id="28" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="25" target="26">
+        <mxCell id="28" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;" parent="1" source="25" target="26" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="700" y="200" as="sourcePoint" />
-            <mxPoint x="750" y="150" as="targetPoint" />
+            <mxPoint x="700" y="190" as="sourcePoint" />
+            <mxPoint x="750" y="140" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="29" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="26" target="27">
+        <mxCell id="29" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;" parent="1" source="26" target="27" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="700" y="200" as="sourcePoint" />
-            <mxPoint x="750" y="150" as="targetPoint" />
+            <mxPoint x="700" y="190" as="sourcePoint" />
+            <mxPoint x="750" y="140" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        
-        <!-- GPU框 -->
-        <mxCell id="30" value="A100 GPU" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+        <mxCell id="30" value="A100 GPU" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;fontStyle=1;" parent="1" vertex="1">
           <mxGeometry x="610" y="190" width="130" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="31" value="V100 GPU" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+        <mxCell id="31" value="V100 GPU" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;fontStyle=1;" parent="1" vertex="1">
           <mxGeometry x="770" y="190" width="80" height="40" as="geometry" />
         </mxCell>
-        
-        <!-- L1和L3在A100上的连接线 -->
-        <mxCell id="32" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;strokeColor=#d6b656;" edge="1" parent="1">
+        <mxCell id="32" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;strokeColor=#006EAF;entryX=0.194;entryY=0.005;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#1ba1e2;" parent="1" edge="1" target="30">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="635" y="180" as="sourcePoint" />
-            <mxPoint x="635" y="190" as="targetPoint" />
+            <mxPoint x="635" y="170" as="sourcePoint" />
+            <mxPoint x="635" y="180" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="33" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;strokeColor=#d6b656;" edge="1" parent="1">
+        <mxCell id="33" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;strokeColor=#006EAF;entryX=0.462;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#1ba1e2;" parent="1" edge="1" target="30">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="815" y="180" as="sourcePoint" />
-            <mxPoint x="675" y="190" as="targetPoint" />
+            <mxPoint x="815" y="170" as="sourcePoint" />
+            <mxPoint x="675" y="180" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        
-        <!-- L2在V100上的连接线 -->
-        <mxCell id="34" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;strokeColor=#d79b00;" edge="1" parent="1">
+        <mxCell id="34" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;strokeColor=#006EAF;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#1ba1e2;" parent="1" edge="1" target="31">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="725" y="180" as="sourcePoint" />
-            <mxPoint x="810" y="190" as="targetPoint" />
+            <mxPoint x="725" y="170" as="sourcePoint" />
+            <mxPoint x="810" y="180" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        
-        <!-- 决策结果标注 -->
-        <mxCell id="35" value="Decision: Use 1x A100 + 1x V100&#xa;Predicted Latency: 95ms, Cost: Low" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="860" y="200" width="180" height="40" as="geometry" />
+        <mxCell id="36" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="600" y="280" width="270" height="80" as="geometry" />
         </mxCell>
-        
-        <!-- 其他任务调度区域 -->
-        <mxCell id="36" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="600" y="280" width="350" height="120" as="geometry" />
+        <mxCell id="37" value="T4 GPU" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="610" y="290" width="80" height="30" as="geometry" />
         </mxCell>
-        
-        <!-- T4 GPU -->
-        <mxCell id="37" value="T4 GPU" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="620" y="300" width="80" height="30" as="geometry" />
+        <mxCell id="38" value="DL Inference" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="620" y="325" width="70" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="38" value="CNN Inference" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="625" y="335" width="70" height="20" as="geometry" />
+        <mxCell id="39" value="V100 GPU" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;fontStyle=1;opacity=70;" parent="1" vertex="1">
+          <mxGeometry x="695" y="290" width="80" height="30" as="geometry" />
         </mxCell>
-        
-        <!-- V100 GPU (训练任务) -->
-        <mxCell id="39" value="V100 GPU" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;fontStyle=1;opacity=70;" vertex="1" parent="1">
-          <mxGeometry x="750" y="300" width="80" height="30" as="geometry" />
+        <mxCell id="40" value="DL Training&#xa;(Preemptible)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;opacity=70;" parent="1" vertex="1">
+          <mxGeometry x="705" y="320" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="40" value="DL Training&#xa;(Preemptible)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;opacity=70;" vertex="1" parent="1">
-          <mxGeometry x="750" y="335" width="80" height="30" as="geometry" />
+        <mxCell id="42" value="A100 GPU&#xa;(Idle)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;fontStyle=1;opacity=50;" parent="1" vertex="1">
+          <mxGeometry x="785" y="285" width="60" height="50" as="geometry" />
         </mxCell>
-        
-        <!-- 暂停图标 -->
-        <mxCell id="41" value="PAUSE" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#FF6B6B;" vertex="1" parent="1">
-          <mxGeometry x="855" y="305" width="40" height="20" as="geometry" />
-        </mxCell>
-        
-        <!-- 另一个空闲GPU -->
-        <mxCell id="42" value="A100 GPU&#xa;(Idle)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;fontStyle=1;opacity=50;" vertex="1" parent="1">
-          <mxGeometry x="880" y="300" width="60" height="50" as="geometry" />
-        </mxCell>
-        
-        <!-- 调度器到资源池的决策箭头 -->
-        <mxCell id="43" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.3;exitDx=0;exitDy=0;entryX=0;entryY=0.3;entryDx=0;entryDy=0;strokeWidth=3;strokeColor=#b85450;" edge="1" parent="1" source="15" target="24">
+        <mxCell id="43" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.3;exitDx=0;exitDy=0;entryX=0;entryY=0.3;entryDx=0;entryDy=0;strokeWidth=3;strokeColor=#b85450;" parent="1" source="15" target="24" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="700" y="300" as="sourcePoint" />
             <mxPoint x="750" y="250" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="44" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.7;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=3;strokeColor=#b85450;" edge="1" parent="1" source="15" target="36">
+        <mxCell id="44" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.7;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=3;strokeColor=#b85450;" parent="1" source="15" target="36" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="700" y="300" as="sourcePoint" />
             <mxPoint x="750" y="250" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        
-        <!-- 工作成果标注 -->
-        <mxCell id="45" value="Work 3 Result" style="text;html=1;strokeColor=#82b366;fillColor=#d5e8d4;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=10;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="270" y="260" width="80" height="20" as="geometry" />
+        <mxCell id="47" value="Real-time Monitoring and Dynamic Adjustment" style="text;html=1;strokeColor=#d79b00;fillColor=#ffe6cc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=12;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="330" y="270" width="140" height="60" as="geometry" />
         </mxCell>
-        
-        <!-- 资源利用率显示 -->
-        <mxCell id="46" value="Resource Pool Status:&#xa;GPU Utilization: 85%&#xa;Cost Efficiency: High" style="text;html=1;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="600" y="410" width="150" height="50" as="geometry" />
-        </mxCell>
-        
-        <!-- 实时监控标注 -->
-        <mxCell id="47" value="Real-time Monitoring and Dynamic Adjustment" style="text;html=1;strokeColor=#d79b00;fillColor=#ffe6cc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=12;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="320" y="300" width="220" height="30" as="geometry" />
-        </mxCell>
-        
       </root>
     </mxGraphModel>
   </diagram>
