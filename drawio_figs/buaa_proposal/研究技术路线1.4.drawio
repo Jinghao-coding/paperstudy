@@ -44,16 +44,16 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="u98JtqVbVj9wZqK8LdO--34" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;strokeColor=#6c8ebf;fillColor=#1ba1e2;" edge="1" parent="u98JtqVbVj9wZqK8LdO--59">
-            <mxGeometry width="50" height="50" relative="1" as="geometry">
-                <mxPoint x="300" y="100" as="sourcePoint" />
-                <mxPoint x="300" y="140" as="targetPoint" />
-            </mxGeometry>
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="100" as="sourcePoint" />
+            <mxPoint x="300" y="140" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="u98JtqVbVj9wZqK8LdO--35" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;strokeColor=#6c8ebf;fillColor=#1ba1e2;" edge="1" parent="u98JtqVbVj9wZqK8LdO--59">
-            <mxGeometry width="50" height="50" relative="1" as="geometry">
-                <mxPoint x="440" y="100" as="sourcePoint" />
-                <mxPoint x="440" y="140" as="targetPoint" />
-            </mxGeometry>
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="100" as="sourcePoint" />
+            <mxPoint x="440" y="140" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="u98JtqVbVj9wZqK8LdO--48" value="Other Tasks" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontColor=#434343;" vertex="1" parent="u98JtqVbVj9wZqK8LdO--59">
           <mxGeometry x="240" y="260" width="120" height="20" as="geometry" />
