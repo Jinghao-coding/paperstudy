@@ -1,0 +1,73 @@
+<mxfile host="multiPageFile">
+  <diagram id="0" name="Page-1">
+    <mxGraphModel dx="1200" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- GPU主框 -->
+        <mxCell id="gpu" value="&lt;b&gt;GPU&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="400" y="200" width="120" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- 任务A -->
+        <mxCell id="taskA" value="&lt;b&gt;Task A&lt;/b&gt;" style="shape=partialRectangle;top=0;left=0;right=0;fillColor=none;strokeColor=#000000;overflow=hidden;" vertex="1" parent="1">
+          <mxGeometry x="100" y="180" width="80" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- 任务B -->
+        <mxCell id="taskB" value="&lt;b&gt;Task B&lt;/b&gt;" style="shape=partialRectangle;top=0;left=0;right=0;fillColor=none;strokeColor=#000000;overflow=hidden;" vertex="1" parent="1">
+          <mxGeometry x="100" y="250" width="80" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- 任务箭头A -->
+        <mxCell id="arrowA" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=classic;endFill=1;strokeWidth=1;" edge="1" parent="1" source="taskA" target="gpu">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <!-- 任务箭头B -->
+        <mxCell id="arrowB" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=classic;endFill=1;strokeWidth=1;" edge="1" parent="1" source="taskB" target="gpu">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <!-- 干扰预测器 -->
+        <mxCell id="predictor" value="&lt;b&gt;干扰预测器&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;(任务干扰模型)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="250" y="180" width="120" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- 红绿灯信号 -->
+        <mxCell id="signal" value="" style="shape=ellipse;fillColor=#f8cecc;strokeColor=#b85450;gradientColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="410" y="100" width="30" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="signal2" value="" style="shape=ellipse;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#d5e8d4;" vertex="1" parent="1">
+          <mxGeometry x="450" y="100" width="30" height="30" as="geometry"/>
+        </mxCell>
+        
+        <!-- 信号线 -->
+        <mxCell id="signalLine" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;dashed=1;strokeColor=#666666;strokeWidth=1;verticalAlign=bottom;align=right;spacing=10;" edge="1" parent="1" source="predictor" target="scheduler">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <!-- 调度器 -->
+        <mxCell id="scheduler" value="&lt;b&gt;调度决策器&lt;/b&gt;" style="shape=rhombus;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" vertex="1" parent="1">
+          <mxGeometry x="330" y="80" width="80" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- 控制线A -->
+        <mxCell id="controlLineA" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;dashed=1;strokeColor=#82b366;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;verticalAlign=bottom;align=right;spacing=10;" edge="1" parent="1" source="scheduler" target="arrowA">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <!-- 控制线B -->
+        <mxCell id="controlLineB" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;dashed=1;strokeColor=#82b366;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;verticalAlign=bottom;align=right;spacing=10;" edge="1" parent="1" source="scheduler" target="arrowB">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <!-- 标签 -->
+        <mxCell id="signalLabel" value="&lt;b style=&quot;color:red&quot;&gt;高干扰&lt;/b&gt; / &lt;b style=&quot;color:green&quot;&gt;低干扰&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="400" y="135" width="90" height="20" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
