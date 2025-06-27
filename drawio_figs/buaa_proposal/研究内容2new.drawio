@@ -46,36 +46,6 @@
         <mxCell id="factor5" value="&lt;font style=&quot;color: rgb(0, 0, 0); font-size: 12px;&quot;&gt;Cost&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=10;fillColor=#f3e5f5;strokeColor=#000000;fontColor=#6a1b9a;" parent="1" vertex="1">
           <mxGeometry x="350" y="277.5" width="80" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="legend-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fafafa;strokeColor=#bdbdbd;strokeWidth=1;" parent="1" vertex="1">
-          <mxGeometry x="50" y="730" width="1100" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="legend-title" value="图例 Legend" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;fontColor=#424242;" parent="1" vertex="1">
-          <mxGeometry x="70" y="740" width="100" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="legend-colors-title" value="实例颜色 Instance Colors:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#424242;fontStyle=1;" parent="1" vertex="1">
-          <mxGeometry x="70" y="765" width="150" height="15" as="geometry" />
-        </mxCell>
-        <mxCell id="legend-green" value="绿色=低负载 Green=Low Load" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#2e7d32;" parent="1" vertex="1">
-          <mxGeometry x="70" y="785" width="150" height="15" as="geometry" />
-        </mxCell>
-        <mxCell id="legend-yellow" value="橙色=中等负载 Orange=Medium Load" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#e65100;" parent="1" vertex="1">
-          <mxGeometry x="70" y="800" width="180" height="15" as="geometry" />
-        </mxCell>
-        <mxCell id="legend-red" value="红色=高负载 Red=High Load" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#c62828;" parent="1" vertex="1">
-          <mxGeometry x="260" y="785" width="150" height="15" as="geometry" />
-        </mxCell>
-        <mxCell id="legend-blue" value="蓝色=冷启动 Blue=Cold Start" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#0d47a1;" parent="1" vertex="1">
-          <mxGeometry x="260" y="800" width="150" height="15" as="geometry" />
-        </mxCell>
-        <mxCell id="legend-arrows" value="箭头粗细=请求流量 Arrow Thickness=Request Traffic" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#424242;fontStyle=1;" parent="1" vertex="1">
-          <mxGeometry x="450" y="765" width="250" height="15" as="geometry" />
-        </mxCell>
-        <mxCell id="legend-size" value="实例大小=计算能力 Instance Size=Computing Capability" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#424242;fontStyle=1;" parent="1" vertex="1">
-          <mxGeometry x="450" y="785" width="280" height="15" as="geometry" />
-        </mxCell>
-        <mxCell id="legend-smart" value="智能分发：避免高负载实例，优先低负载大容量实例" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#1976d2;fontStyle=1;" parent="1" vertex="1">
-          <mxGeometry x="450" y="805" width="350" height="15" as="geometry" />
-        </mxCell>
         <mxCell id="VRUh8kDvx-8c6TV4AwR0-39" value="" style="shape=singleArrow;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="186" y="264.5" width="50" height="37.5" as="geometry" />
         </mxCell>
